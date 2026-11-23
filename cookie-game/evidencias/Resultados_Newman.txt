@@ -1,0 +1,65 @@
+newman
+
+ShopPanel · Videojuegos
+
+→ Catálogo de videojuegos
+  GET https://dummyjson.com/c/1a95-2677-4c69-9178 [200 OK, 2.29kB, 4.4s]
+  ✓  HTTP 200
+  ✓  Seis títulos únicos
+  ✓  Campos de producto
+
+→ Detalle · minecraft
+  GET https://dummyjson.com/c/cbf5-7dbf-443e-b0ba [200 OK, 1.32kB, 4.2s]
+  ✓  HTTP 200
+  ✓  Identidad del videojuego
+  ✓  Precio simulado válido
+
+→ Detalle · supertux
+  GET https://dummyjson.com/c/e820-e139-4df1-989c [200 OK, 1.31kB, 4.5s]
+  ✓  HTTP 200
+  ✓  Identidad del videojuego
+  ✓  Precio simulado válido
+
+→ Detalle · supertuxkart
+  GET https://dummyjson.com/c/eb60-a369-4394-80f9 [200 OK, 1.31kB, 4.4s]
+  ✓  HTTP 200
+  ✓  Identidad del videojuego
+  ✓  Precio simulado válido
+
+→ Detalle · 0-ad
+  GET https://dummyjson.com/c/cded-1d9b-4474-8242 [200 OK, 1.31kB, 4.9s]
+  ✓  HTTP 200
+  ✓  Identidad del videojuego
+  ✓  Precio simulado válido
+
+→ Detalle · wesnoth
+  GET https://dummyjson.com/c/d181-9b13-4e1d-89f2 [200 OK, 1.32kB, 2.6s]
+  ✓  HTTP 200
+  ✓  Identidad del videojuego
+  ✓  Precio simulado válido
+
+→ Detalle · minetest
+  GET https://dummyjson.com/c/9f66-0e29-4503-9990 [200 OK, 1.3kB, 5.1s]
+  ✓  HTTP 200
+  ✓  Identidad del videojuego
+  ✓  Precio simulado válido
+
+┌─────────────────────────┬───────────────────┬───────────────────┐
+│                         │          executed │            failed │
+├─────────────────────────┼───────────────────┼───────────────────┤
+│              iterations │                 1 │                 0 │
+├─────────────────────────┼───────────────────┼───────────────────┤
+│                requests │                 7 │                 0 │
+├─────────────────────────┼───────────────────┼───────────────────┤
+│            test-scripts │                 7 │                 0 │
+├─────────────────────────┼───────────────────┼───────────────────┤
+│      prerequest-scripts │                 0 │                 0 │
+├─────────────────────────┼───────────────────┼───────────────────┤
+│              assertions │                21 │                 0 │
+├─────────────────────────┴───────────────────┴───────────────────┤
+│ total run duration: 30.6s                                       │
+├─────────────────────────────────────────────────────────────────┤
+│ total data received: 2.31kB (approx)                            │
+├─────────────────────────────────────────────────────────────────┤
+│ average response time: 4.3s [min: 2.6s, max: 5.1s, s.d.: 753ms] │
+└─────────────────────────────────────────────────────────────────┘

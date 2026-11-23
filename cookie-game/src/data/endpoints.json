@@ -1,0 +1,11 @@
+{
+  "catalogo": "https://dummyjson.com/c/1a95-2677-4c69-9178",
+  "detalle": {
+    "minecraft": "https://dummyjson.com/c/cbf5-7dbf-443e-b0ba",
+    "supertux": "https://dummyjson.com/c/e820-e139-4df1-989c",
+    "supertuxkart": "https://dummyjson.com/c/eb60-a369-4394-80f9",
+    "0-ad": "https://dummyjson.com/c/cded-1d9b-4474-8242",
+    "wesnoth": "https://dummyjson.com/c/d181-9b13-4e1d-89f2",
+    "minetest": "https://dummyjson.com/c/9f66-0e29-4503-9990"
+  }
+}

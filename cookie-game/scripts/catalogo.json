@@ -1,0 +1,50 @@
+[
+  {
+    "id": "minecraft",
+    "title": "Minecraft",
+    "category": "Aventura",
+    "description": "Explora un mundo de bloques, reúne materiales y construye tus propios refugios.",
+    "price": 19.99,
+    "thumbnail": "minecraft"
+  },
+  {
+    "id": "supertux",
+    "title": "SuperTux",
+    "category": "Acción",
+    "description": "Acompaña a Tux por escenarios de plataformas, recoge monedas y supera obstáculos.",
+    "price": 0,
+    "thumbnail": "supertux"
+  },
+  {
+    "id": "supertuxkart",
+    "title": "SuperTuxKart",
+    "category": "Carreras",
+    "description": "Compite en carreras de karts y recorre circuitos con distintos personajes.",
+    "price": 0,
+    "thumbnail": "supertuxkart"
+  },
+  {
+    "id": "0-ad",
+    "title": "0 A.D.",
+    "category": "Estrategia",
+    "description": "Administra recursos, construye una ciudad y dirige a una civilización de la Antigüedad.",
+    "price": 0,
+    "thumbnail": "0-ad"
+  },
+  {
+    "id": "wesnoth",
+    "title": "The Battle for Wesnoth",
+    "category": "Estrategia",
+    "description": "Recluta unidades y disputa batallas por turnos sobre mapas hexagonales.",
+    "price": 0,
+    "thumbnail": "wesnoth"
+  },
+  {
+    "id": "minetest",
+    "title": "Luanti",
+    "category": "Aventura",
+    "description": "Explora y construye mundos de vóxeles con los juegos de esta plataforma.",
+    "price": 0,
+    "thumbnail": "minetest"
+  }
+]

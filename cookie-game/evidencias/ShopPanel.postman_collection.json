@@ -1,0 +1,155 @@
+{
+  "info": {
+    "name": "ShopPanel · Videojuegos",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Catálogo de videojuegos",
+      "request": {
+        "method": "GET",
+        "url": "https://dummyjson.com/c/1a95-2677-4c69-9178"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"HTTP 200\", () => pm.response.to.have.status(200));",
+              "const payload = pm.response.json();",
+              "pm.test(\"Seis títulos únicos\", () => pm.expect(new Set(payload.products.map(p=>p.id)).size).to.equal(6));",
+              "pm.test(\"Campos de producto\", () => payload.products.forEach(p => pm.expect(p).to.include.all.keys(\"id\",\"title\",\"category\",\"description\",\"price\",\"thumbnail\")));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Detalle · minecraft",
+      "request": {
+        "method": "GET",
+        "url": "https://dummyjson.com/c/cbf5-7dbf-443e-b0ba"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"HTTP 200\", () => pm.response.to.have.status(200));",
+              "const payload = pm.response.json();",
+              "pm.test(\"Identidad del videojuego\", () => pm.expect(payload.id).to.equal(\"minecraft\"));",
+              "pm.test(\"Precio simulado válido\", () => pm.expect(payload.price).to.be.at.least(0));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Detalle · supertux",
+      "request": {
+        "method": "GET",
+        "url": "https://dummyjson.com/c/e820-e139-4df1-989c"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"HTTP 200\", () => pm.response.to.have.status(200));",
+              "const payload = pm.response.json();",
+              "pm.test(\"Identidad del videojuego\", () => pm.expect(payload.id).to.equal(\"supertux\"));",
+              "pm.test(\"Precio simulado válido\", () => pm.expect(payload.price).to.be.at.least(0));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Detalle · supertuxkart",
+      "request": {
+        "method": "GET",
+        "url": "https://dummyjson.com/c/eb60-a369-4394-80f9"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"HTTP 200\", () => pm.response.to.have.status(200));",
+              "const payload = pm.response.json();",
+              "pm.test(\"Identidad del videojuego\", () => pm.expect(payload.id).to.equal(\"supertuxkart\"));",
+              "pm.test(\"Precio simulado válido\", () => pm.expect(payload.price).to.be.at.least(0));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Detalle · 0-ad",
+      "request": {
+        "method": "GET",
+        "url": "https://dummyjson.com/c/cded-1d9b-4474-8242"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"HTTP 200\", () => pm.response.to.have.status(200));",
+              "const payload = pm.response.json();",
+              "pm.test(\"Identidad del videojuego\", () => pm.expect(payload.id).to.equal(\"0-ad\"));",
+              "pm.test(\"Precio simulado válido\", () => pm.expect(payload.price).to.be.at.least(0));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Detalle · wesnoth",
+      "request": {
+        "method": "GET",
+        "url": "https://dummyjson.com/c/d181-9b13-4e1d-89f2"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"HTTP 200\", () => pm.response.to.have.status(200));",
+              "const payload = pm.response.json();",
+              "pm.test(\"Identidad del videojuego\", () => pm.expect(payload.id).to.equal(\"wesnoth\"));",
+              "pm.test(\"Precio simulado válido\", () => pm.expect(payload.price).to.be.at.least(0));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Detalle · minetest",
+      "request": {
+        "method": "GET",
+        "url": "https://dummyjson.com/c/9f66-0e29-4503-9990"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"HTTP 200\", () => pm.response.to.have.status(200));",
+              "const payload = pm.response.json();",
+              "pm.test(\"Identidad del videojuego\", () => pm.expect(payload.id).to.equal(\"minetest\"));",
+              "pm.test(\"Precio simulado válido\", () => pm.expect(payload.price).to.be.at.least(0));"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
