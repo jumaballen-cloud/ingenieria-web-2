@@ -1,4 +1,4 @@
-# Cookie Game · ShopPanel
+# Cookie Game
 
 ## Descripción
 
